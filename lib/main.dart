@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:store_app/core/app/connectivity_controller.dart';
 import 'package:store_app/core/app/env.variable.dart';
 import 'package:store_app/store_app.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await EnvVariable.instance.init(envType: EnvTypeEnum.dev);
+  await ConnectivityController.instance.init();
   await SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown,

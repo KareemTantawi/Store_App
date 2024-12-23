@@ -19,7 +19,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
   
-  connectivity_plus: ^6.1.1
+  connectivity_plus: ^5.0.2
   flutter_dotenv: ^5.2.1
   flutter_screenutil: ^5.9.3
   
@@ -47,6 +47,7 @@ flutter:
   assets:
     - .env.dev
     - .env.prod
+    - assets/images/core/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
